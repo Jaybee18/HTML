@@ -11,29 +11,29 @@ $(document).ready(function(){
     });
 });
 
-function operationById(id){
+function hide(id){
     var container = $(id);
     container.removeClass("animationIN");
     container.addClass("animationOUT");
 }
-function operation2ById(id){
+function show(id){
     var container = $(id);
     container.removeClass("animationOUT");
     container.addClass("animationIN");
 }
 
 function left(){
-    operationById(contents[index]);
+    hide(contents[index]);
     index++;
     if(index >= elementsslist.length)
         index = 0;
-    operation2ById(contents[index]);
+    show(contents[index]);
 }
 
 function right(){
-    operationById(contents[index]);
+    hide(contents[index]);
     index--;
     if (index < 0)
         index = elementsslist.length - 1;
-    operation2ById(contents[index]);
+    show(contents[index]);
 }
