@@ -1,0 +1,142 @@
+:root{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 600;
+    color: #EFF1ED;
+    --primary: #1F1F1F;
+    --secondary:  #eff1ed;
+}
+/* 218,185,0 */
+/* #4EA699 blue*/
+/* #D16014 orange*/
+/* #5ADBFF darker blue*/
+/* #EFF1ED white*/
+
+body{
+    background-color: var(--primary);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* header and navigation bar */
+#title{
+    float: left;
+    padding: 10px;
+    cursor: default;
+    user-select: none;
+}
+
+.headerbutton{
+    border:none;
+    padding: 10px;
+    background-color: transparent;
+    user-select: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+#nav{
+    float: right;
+}
+
+#header{
+    width: 100%;
+    height: 40px;
+}
+
+@keyframes fadetoleft{
+    0%{opacity: 1; margin-left: 0%; display: block;}
+    50%{opacity: 0;}
+    99%{display: block;}
+    100%{opacity: 0; margin-left: -30%; display: none;}
+}
+@keyframes fadetoleftr{
+    0%{opacity: 0; margin-left: -30%;}
+    50%{opacity: 1;}
+    100%{opacity: 1; margin-left: 0%;}
+}
+
+
+/* main site content */
+#maincontent{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+}
+#left,#right{
+    width: min-content;
+    height: min-content;
+    border: none;
+    background: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    transform: translateY(-70%);
+}
+#content{
+    margin-top: 7%;
+    margin-left: 5%;
+    width: fit-content;
+    font-size: xx-large;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#content div{
+    transform: translateX(0%);
+    opacity: 1;
+}
+#content span{
+    font-size: 4rem;
+    text-decoration-line: underline;
+}
+#content button{
+    border: none;
+    outline: none;
+    background-image: linear-gradient(90deg, blue, rgb(34, 111, 255));
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: black 0px 0px 0px;
+
+    color: var(--secondary);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 300;
+
+    transition: box-shadow 0.1s;
+}
+#content button:hover{
+    box-shadow: black 0px 6px 10px;
+}
+#mainimage{
+    stroke: white;
+    overflow: hidden;
+    width: 50%;
+    height: 50%;
+    clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    background-image: url("kunstprojekt.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#bild{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    user-select: none;
+}
+.fadetoleft{
+    animation-name: fadetoleft;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.fadetoleftr{
+    animation-name: fadetoleftr;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}

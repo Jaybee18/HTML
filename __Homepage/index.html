@@ -1,0 +1,122 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Jan Bessler</title>
+    <script>
+        if(screen.width <= 700) // load mobile version, when screen too smol
+        {
+            document.location = "mobileIndex.html";
+        }
+    </script>
+    <header>
+        <div class="logo">
+            <h1>Jan Bessler</h1>
+        </div>
+
+        <div class="infobox" style="opacity: 100%;">
+            <div id="arrow" style="opacity: 0%;"></div>
+            <div id="meinfo" style="opacity: 0%;">
+                Ich bin ein 15-Jaehriger </br>Pythondeveloper aus Gescher
+            </div>
+        </div>
+        
+        <div id="menulayout">
+            <div id="hoverarea"><div id="menubars"><img src="Images/menubars.png" id="menubarsimage"></div></div>
+            <ul id="menulist">
+                <div class="headerlinebackground" style="opacity: 0%;">
+                    <a href="#socialmediaid" style="text-decoration: none;"><h1 class="headline"><b>Contact</b></h1></a>
+                </div>
+                <div class="headerlinebackground" style="opacity: 0%;">
+                    <h1 class="headline"><b>Projects</b></h1>
+                    <div id="projectslist">
+                        <a href="#project_progress"><button class="projectslistbutton">Progress</button></a></br>
+                        <a href="#project_translator"><button class="projectslistbutton">Translator</button></a></br>
+                        <a href="#project_progress"><button class="projectslistbutton">Progress</button></a></br>
+                        <a href="#project_progress"><button class="projectslistbutton">Progress</button></a></br>
+                        <a href="#project_progress"><button class="projectslistbutton">Progress</button></a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <div id="line"></div>
+
+    <div id="content">
+        <div class="description">
+            <div class="imageTransformer_blur">
+                <div class="blur_effect">
+                    <div class="description_blur">
+                        <p style="margin-left: 10px; margin-top: 10px; margin-top: 150px;">Auf dieser Seite befinden sich ein paar meiner Projekte. </br>
+                                                                        Die Projekte stammen alle von mir 
+                                                                        und Sie können </br> sie auf meiner GitHub Seite finden und herunterladen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- single project div -->
+        <div class="element_project" style="margin-top: 50px;" id="project_progress">
+            <div class="imageTransformer_left"></div>
+            <div class="description_right">
+                <h1 style="margin-top: 0;">Progress<img src="Images/logo_python.svg" style="height: 20px; margin-left: 10px;" title="Python"></h1>
+                <p>Dieses Projekt ist ein Python module, welches man bei sich im Script importieren und benutzen kann. Es soll dabei helfen Fortschritte in, zum Beispiel, grossen Datentransferprozessen zu visualisieren. Das module beinhaltet eine Klasse 'progressBar' und eine 'animation' (naehere Erklaerung auf <a href="https://github.com/Jaybee18" style="color: black;">GitHub</a>). Die Klassen sind extra so gestaltet, dass sie eine moeglichst grosse Anzahl an verstellbaren Parametern haben, um jede progressBar so individuell wie moeglich gestalten zu koennen. Die Benutzung ist dabei auch so einfach wie moeglich gehalten, man kann jedoch auch mit verschiedenen eingebauten Methoden die progressBar manuell bedienen.</p>
+            </div>
+        </div>
+
+        <!-- double project div -->
+        <div class="doubleProject">
+            <div class="element_project" style="margin-top: 50px; height: initial;" id="project_translator">
+                <div class="description_right">
+                    <h1 style="margin-top: 0;">Translator<img src="Images/logo_python.svg" style="height: 20px; margin-left: 10px;" title="Python"></h1>
+                    <p>Dieses Projekt kommt in Form einer .exe Datei, wurde aber in Python geschrieben. Wenn die Datei ausgefuehrt wird, ploppt ein Pythonterminal auf. Dieses kann Minimiert werden, da es für die Benutzung der App nicht relevant ist. Das Programm wird dann, bis das Terminal wieder geschlossen wird, jedes Wort, an welches !tl[sprache] gehaengt wird, automatisch in die gewuenschte Sprache uebersetzen und das zuvor geschriebene Wort mit dem neuen Wort ersetzen. Dieses Projekt ist fuer Leute, die nicht immer den Uebersetzer aufrufen wollen muessen, wenn sie gerade im 'Schreibflow' sind und ein Wort in einer anderen Sprache nicht wissen.</p>
+                </div>
+            </div>
+
+            <div class="element_project" style="margin-top: 50px; height: initial;" id="project_progress">
+                <div class="description_right">
+                    <h1 style="margin-top: 0;">Progress<img src="Images/logo_python.svg" style="height: 20px; margin-left: 10px;" title="Python"></h1>
+                    <p>Dieses Projekt ist ein Python module, welches man bei sich im Script importieren und benutzen kann. Es soll dabei helfen Fortschritte in, zum Beispiel, grossen Datentransferprozessen zu visualisieren. Das module beinhaltet eine Klasse 'progressBar' und eine 'animation' (naehere Erklaerung auf <a href="https://github.com/Jaybee18" style="color: black;">GitHub</a>). Die Klassen sind extra so gestaltet, dass sie eine moeglichst grosse Anzahl an verstellbaren Parametern haben, um jede progressBar so individuell wie moeglich gestalten zu koennen. Die Benutzung ist dabei auch so einfach wie moeglich gehalten, man kann jedoch auch mit verschiedenen eingebauten Methoden die progressBar manuell bedienen.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- image animation project div (for visual projects)-->
+        <div class="element_project_imageanim" style="margin-top: 50px;" id="project_progress">
+            <div class="imageTransformer_left_anim"></div>
+            <div class="description_right">
+                <h1 style="margin-top: 0;">Progress<img src="Images/logo_python.svg" style="height: 20px; margin-left: 10px;" title="Python"></h1>
+                <p>Dieses Projekt ist ein Python module, welches man bei sich im Script importieren und benutzen kann. Es soll dabei helfen Fortschritte in, zum Beispiel, grossen Datentransferprozessen zu visualisieren. Das module beinhaltet eine Klasse 'progressBar' und eine 'animation' (naehere Erklaerung auf <a href="https://github.com/Jaybee18" style="color: black;">GitHub</a>). Die Klassen sind extra so gestaltet, dass sie eine moeglichst grosse Anzahl an verstellbaren Parametern haben, um jede progressBar so individuell wie moeglich gestalten zu koennen. Die Benutzung ist dabei auch so einfach wie moeglich gehalten, man kann jedoch auch mit verschiedenen eingebauten Methoden die progressBar manuell bedienen.</p>
+            </div>
+        </div>
+
+        <div class="element_project" style="margin-top: 50px;" id="project_progress">
+            <div class="imageTransformer_left"></div>
+            <div class="description_right">
+                <h1 style="margin-top: 0;">Progress<img src="Images/logo_python.svg" style="height: 20px; margin-left: 10px;" title="Python"></h1>
+                <p>Dieses Projekt ist ein Python module, welches man bei sich im Script importieren und benutzen kann. Es soll dabei helfen Fortschritte in, zum Beispiel, grossen Datentransferprozessen zu visualisieren. Das module beinhaltet eine Klasse 'progressBar' und eine 'animation' (naehere Erklaerung auf <a href="https://github.com/Jaybee18" style="color: black;">GitHub</a>). Die Klassen sind extra so gestaltet, dass sie eine moeglichst grosse Anzahl an verstellbaren Parametern haben, um jede progressBar so individuell wie moeglich gestalten zu koennen. Die Benutzung ist dabei auch so einfach wie moeglich gehalten, man kann jedoch auch mit verschiedenen eingebauten Methoden die progressBar manuell bedienen.</p>
+            </div>
+        </div>
+
+        <div class="element_project" style="margin-top: 50px;" id="project_progress">
+            <div class="imageTransformer_left"></div>
+            <div class="description_right">
+                <h1 style="margin-top: 0;">Progress<img src="Images/logo_python.svg" style="height: 20px; margin-left: 10px;" title="Python"></h1>
+                <p>Dieses Projekt ist ein Python module, welches man bei sich im Script importieren und benutzen kann. Es soll dabei helfen Fortschritte in, zum Beispiel, grossen Datentransferprozessen zu visualisieren. Das module beinhaltet eine Klasse 'progressBar' und eine 'animation' (naehere Erklaerung auf <a href="https://github.com/Jaybee18" style="color: black;">GitHub</a>). Die Klassen sind extra so gestaltet, dass sie eine moeglichst grosse Anzahl an verstellbaren Parametern haben, um jede progressBar so individuell wie moeglich gestalten zu koennen. Die Benutzung ist dabei auch so einfach wie moeglich gehalten, man kann jedoch auch mit verschiedenen eingebauten Methoden die progressBar manuell bedienen.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy 2020 Jan Bessler</p>
+        <div class="socialmedialinks" id="socialmediaid">
+            <a href="https://www.instagram.com/jaybes.mg/?hl=de"><img class="socialmediaimage" src="Images/logo_instagram.svg"></a>
+            <a href="https://twitter.com/JanBessler"><img class="socialmediaimage" src="Images/logo_twitter.svg"></a>
+            <a href="https://www.facebook.com/profile.php?id=100009598660468"><img class="socialmediaimage" src="Images/logo_facebook_square.svg"></a>
+            <a href="https://github.com/Jaybee18"><img class="socialmediaimage" src="Images/logo_github.svg"></a>
+            <a href="https://www.hackerrank.com/mister_jaybee18"><img class="socialmediaimage" src="Images/logo_hackerrank.svg"></a>
+            <a href="https://hackerone.com/jaybee18?type=user">H1</a>
+        </div>
+    </footer>
+</html>

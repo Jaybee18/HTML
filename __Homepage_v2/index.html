@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="title">
+                jan bessler
+            </div>
+            <div id="nav">
+                <button class="headerbutton">projects</button>
+                <button class="headerbutton">contact</button>
+                <button class="headerbutton">home</button>
+            </div>
+        </div>
+
+        <div id="maincontent">
+                <button id="left" onclick="right()">
+                    <svg width="30" height="50">
+                        <path d="M 5 25 L 25 5 M 5 25 L 25 45" style="stroke: white; fill: green; stroke-linecap: round;"/>
+                    </svg>
+                </button>
+
+            <div id="content">
+                <div id="firstcontent" style="display: block;">
+                    <p id="temp" style="margin: 0%; padding: 0%;"><span>Content</span></p></br>
+                    <p id="desciption" style="margin: 0%; padding: 0%;">i have absolutely no content </br> for this site </br></p>
+                    <a href="https://github.com/Jaybee18"><button id="button">download</button></a>
+                </div>
+                <div id="secondcontent" style="display: none;">
+                    <p id="temp2" style="margin: 0%; padding: 0%; opacity: 0;"><span>NewContent</span></p></br>
+                    <p id="desciption2" style="margin: 0%; padding: 0%; opacity: 0;">i hate every human being </br> on this planet </br></p>
+                    <a href="https://github.com/Jaybee18"><button id="button2" style="opacity: 0;">download</button></a>
+                </div>
+            </div>
+            <video tabindex="-1" style="width: 1013px; height: 570px; left: 433px; top: 0px;" src="blob:https://www.youtube.com/d4657769-c0ed-4c82-962c-f04b3fa6267a"></video>
+            
+                <button id="right">
+                    <svg width="30" height="50">
+                        <path d="M 25 25 L 5 5 M 25 25 L 5 45" style="stroke: white; fill: green; stroke-linecap: round;"/>
+                    </svg>
+                </button>
+        </div>
+    </body>
+
+</html>

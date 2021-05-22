@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(37, 37, 37);
+}
+
+@keyframes anim{
+    0%  {margin-top: 11px;}
+    20% {margin-top: 5px; }
+    40%{margin-top: 11px;}
+}
+
+@keyframes expand{
+    from{width: 50px;}
+    to{width: 200px;}
+}
+
+@keyframes vanish {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+.box{
+    background-color: rgb(70, 70, 70);
+    width: 50px;
+    height: 30px;
+    border-radius: 3px 20px 20px 20px;
+    position: absolute;
+    z-index: -1;
+    
+    animation-name: expand;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#one, #two, #thr{
+    width: 7px;
+    height: 7px;
+    background-color: rgb(112, 112, 112);
+    float: left;
+    margin-left: 7px;
+    border-radius: 20px;
+    margin-top: 11px;
+    opacity: 1;
+}
+
+#one{
+    animation-name: anim, vanish;
+    animation-iteration-count: infinite, 1;
+    animation-fill-mode: none, forwards;
+    animation-duration: 1.5s, 1.5s;
+    animation-delay: 0s, 3s;
+}
+
+#two{
+    animation-name: anim, vanish;
+    animation-iteration-count: infinite, 1;
+    animation-fill-mode: none, forwards;
+    animation-duration: 1.5s, 1.5s;
+    animation-delay: 0.2s, 3s;
+}
+
+#thr{
+    animation-name: anim, vanish;
+    animation-iteration-count: infinite, 1;
+    animation-fill-mode: none, forwards;
+    animation-duration: 1.5s, 1.5s;
+    animation-delay: 0.4s, 3s;
+}
+
+.typingcontent{
+    display: block;
+    position: absolute;
+    color: rgb(190, 190, 190);
+    margin-top: 5px;
+    margin-left: 10px;
+    opacity: 0;
+
+    animation-name: vanish;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}

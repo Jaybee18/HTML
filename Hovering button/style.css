@@ -1,0 +1,38 @@
+/*
+Colors:
+
+blau:
+#006b6b
+#80ffff
+#02fdf7
+#009999
+
+*/
+
+body{
+    background-color: dimgray;
+}
+
+
+/*Header buttons*/
+#headerlinebackground{
+    background-color: white;
+    width: min-content;
+}
+
+#headline {
+    background-color: dimgray;
+    background-size: 10px;
+}
+
+#headerlinebackground:hover #headline{
+    margin-top: -5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0px 5px 7px black;
+}
+
+#headerlinebackground:hover{
+    padding-bottom: 10px;
+}
+
