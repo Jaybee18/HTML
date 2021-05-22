@@ -47,17 +47,16 @@ body{
     height: 40px;
 }
 
-@keyframes fadetoleft{
-    0%{opacity: 1; margin-left: 0%; display: block;}
-    50%{opacity: 0;}
-    99%{display: block;}
-    100%{opacity: 0; margin-left: -30%; display: none;}
-}
-@keyframes fadetoleftr{
+@keyframes animationin{
     0%{opacity: 0; margin-left: -30%;}
-    50%{opacity: 1;}
     100%{opacity: 1; margin-left: 0%;}
 }
+@keyframes animationout{
+    0%{opacity: 1; margin-left: 0%;}
+    100%{opacity: 0; margin-left: -30%;}
+}
+.animationIN{animation-name: animationin; animation-duration: 0.3s; animation-fill-mode: forwards;}
+.animationOUT{animation-name: animationout; animation-duration: 0.3s; animation-fill-mode: forwards;}
 
 
 /* main site content */
@@ -83,6 +82,9 @@ body{
     font-size: xx-large;
     display: grid;
     grid-template-columns: auto auto;
+}
+#firstcontent, #secondcontent{
+    position: absolute;
 }
 #content div{
     transform: translateX(0%);
@@ -129,14 +131,4 @@ body{
     height: 50%;
     position: absolute;
     user-select: none;
-}
-.fadetoleft{
-    animation-name: fadetoleft;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-}
-.fadetoleftr{
-    animation-name: fadetoleftr;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
 }
